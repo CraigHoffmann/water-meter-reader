@@ -17,12 +17,14 @@ The meter reader uses a WeMOS D1 Mini (R3) but would work with any ESP8266 with 
 
 ## Firmware
 
-The Arduino IDE was used to develop and program the code.  If you have used this before with the ESP8266 devices you should have no problems.  If you're new to this then there are 100's of pages on the internet detailing how to setup the environment and program devices - I suggest you start by looking for one that suits your level of background knowledge.
+The Arduino IDE was used to develop and program the code.  If you have used this before with the ESP8266 devices you should have no problems.  If you're new to arduino or ESP8266's then there are hundreds of pages on the internet detailing how to setup the environment and program devices - I suggest you start by looking for one that suits your level of background knowledge to get up to speed.
+
+If you want the temperature sensor functionality then the **DallasTemperature** and **OneWire** libraries need to be installed in the IDE.
 
 ## Case
 
-The cover had been broken off the meter for years so I decided to make a new 3D printed cover that doubled as the case for the sensor.  If you don't have access to a 3D printer you could probably use the bottom of a plastic container or tin - anything that fits snug over the meter to keep the sensor aligned to the dial.
+My water meter cover had been broken off for years so I decided to make a new 3D printed cover that doubled as the case for the sensor.  I  The lid is "keyed" with the old lid hinge mounting so that the sensor is always aligned to the rotating dial. Files are available in the github repository to download and print your own.
 
-The case is a 3D printed case that doubles as a lid for the meter.  Files are available in the github repository todownload and print your own.
+If you don't have access to a 3D printer you could probably use the bottom of a plastic container or tin - anything that fits snug over the meter to keep the sensor aligned to the dial.  Use your imagination and maker skills.
 
 ## Setup
