@@ -28,3 +28,11 @@ My water meter cover had been broken off for years so I decided to make a new 3D
 If you don't have access to a 3D printer you could probably use the bottom of a plastic container or tin - anything that fits snug over the meter to keep the sensor aligned to the dial.  Use your imagination and maker skills.
 
 ## Setup
+
+First step is to configure the wifi to connect to your network.  **This can only be done when the device is powered up with pin XXXXXX pulled to ground.**  (I am not a fan of devices that go into setup mode just because they don't find your network)  When powered up with pin XXXXXX grounded the device will create an access point - connect to the access point and then load the default page 192.168.4.1 and enter you network wifi details.  Remove the ground to pin XXXXXX and restart the device for normal operation.
+
+If you don't have an easy way of finding device IP addresses on your network then I suggest allocating an IP address in your router.  If you have a serial monitor plugged in when powering up the device it will display the assigned IP address on startup.
+
+* The main water meter setup page can be found at http://<device-ip>/  
+* Alternatively if your system supports multicast DNS then you can use http://watermeter.local/
+  
