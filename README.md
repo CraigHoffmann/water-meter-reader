@@ -29,7 +29,7 @@ If you don't have access to a 3D printer you could probably use the bottom of a 
 
 ## Setup
 
-First step is to configure the wifi to connect to your network.  **This can only be done when the device is powered up with pin XXXXXX pulled to ground.**  (I am not a fan of devices that go into setup mode just because they don't find your network)  When powered up with pin XXXXXX grounded the device will create an access point - connect to the access point and then load the default page 192.168.4.1 and enter you network wifi details.  Remove the ground to pin XXXXXX and restart the device for normal operation.
+First step is to configure the wifi to connect to your network.  **This can only be done when the device is powered up with pin D0 (GPIO16) pulled to ground.**  (I am not a fan of devices that go into setup mode just because they don't find your network)  When powered up with pin D0 grounded the device will create an access point - connect to the access point and then load the default page 192.168.4.1 and enter you network wifi details.  Remove the ground to pin D0 and restart the device for normal operation.
 
 If you don't have an easy way of finding device IP addresses on your network then I suggest allocating an IP address in your router.  If you have a serial monitor plugged in when powering up the device it will display the assigned IP address on startup.
 
