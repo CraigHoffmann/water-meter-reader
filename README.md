@@ -29,10 +29,10 @@ If you don't have access to a 3D printer you could probably use the bottom of a 
 
 ## Setup
 
-First step is to configure the wifi to connect to your network.  **This can only be done when the device is powered up with pin D0 (GPIO16) pulled to ground.**  (I am not a fan of devices that go into setup mode just because they don't find your network)  When powered up with pin D0 grounded the device will create an access point - connect to the access point and then load the default page 192.168.4.1 and enter you network wifi details.  Remove the ground to pin D0 and restart the device for normal operation.
+First step is to configure the wifi to connect to your network.  If the device wifi has not been setup previously WiFiManager will automatically setup an access point called **watermeter**. Connect to the access point with password **wifisetup** and then load the default page 192.168.4.1 and enter your network wifi details.   **If you want to force the erasure of the wifi settings for some reason power up the device with pin D7 (GPIO13) pulled to ground.**  This will erase the wifi settings and go stright to the WiFiManager access point config.
 
-If you don't have an easy way of finding device IP addresses on your network then I suggest allocating an IP address in your router.  If you have a serial monitor plugged in when powering up the device it will display the assigned IP address on startup.
+If you have a serial monitor plugged in when powering up the device it will display the assigned IP address on startup.  If you don't have an easy way of finding device IP addresses on your network then I suggest allocating an IP address in your router.  
 
-* The main water meter setup page can be found at http://<device-ip>/  
-* Alternatively if your system supports multicast DNS then you can use http://watermeter.local/
+* The main water meter setup page can be found at http://\<device-ip\>/  
+* Alternatively if your system supports multicast DNS then you can use http://watermeter.local/ 
   
