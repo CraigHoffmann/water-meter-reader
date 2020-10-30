@@ -14,7 +14,9 @@ The meter reader uses a [WeMOS D1 Mini (R3)](https://docs.wemos.cc/en/latest/d1/
 * The WeMOS has a built in 3.3v regulator for the ESP8266 and the sensor runs at 5V so suitable supply electronics are required.
 
 
-![Circuit](https://github.com/CraigHoffmann/water-meter-reader/blob/master/Circuit/watermeter-cct.jpg?raw=true)  ![Wiring](https://github.com/CraigHoffmann/water-meter-reader/blob/master/Circuit/watermeter-wiring.jpg?raw=true)
+![Circuit](https://github.com/CraigHoffmann/water-meter-reader/blob/master/Circuit/watermeter-cct.jpg?raw=true)
+
+![Wiring](https://github.com/CraigHoffmann/water-meter-reader/blob/master/Circuit/watermeter-wiring.jpg?raw=true)
 
 
 ## Firmware
@@ -37,6 +39,10 @@ If you have a serial monitor plugged in when powering up the device it will disp
 
 * The main water meter setup page can be found at http://\<device-ip\>/  
 * Alternatively if your system supports multicast DNS then you can use http://watermeter.local/ 
+  
+![Homepage](https://github.com/CraigHoffmann/water-meter-reader/blob/master/Images/homepage.jpg?raw=true)
+
+![MQTT Setup](https://github.com/CraigHoffmann/water-meter-reader/blob/master/Images/mqttsetup.jpg?raw=true)  
   
 ![Setup Trigger Thresholds](https://github.com/CraigHoffmann/water-meter-reader/blob/master/Images/setupchart.jpg?raw=true)
 
