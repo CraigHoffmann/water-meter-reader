@@ -40,9 +40,9 @@ If you have a serial monitor plugged in when powering up the device it will disp
 * The main water meter setup page can be found at http://\<device-ip\>/  
 * Alternatively if your system supports multicast DNS then you can use http://watermeter.local/ 
   
-![Homepage](https://github.com/CraigHoffmann/water-meter-reader/blob/master/Images/homepage.jpg?raw=true)
-
-![MQTT Setup](https://github.com/CraigHoffmann/water-meter-reader/blob/master/Images/mqttsetup.jpg?raw=true)  
+watermeter.local    |  watermeter.local/mqttsetup
+:-------------------------:|:-------------------------:  
+![Homepage](https://github.com/CraigHoffmann/water-meter-reader/blob/master/Images/homepage.jpg?raw=true) | ![MQTT Setup](https://github.com/CraigHoffmann/water-meter-reader/blob/master/Images/mqttsetup.jpg?raw=true)  
   
 ![Setup Trigger Thresholds](https://github.com/CraigHoffmann/water-meter-reader/blob/master/Images/setupchart.jpg?raw=true)
 
