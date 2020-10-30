@@ -13,6 +13,9 @@ The meter reader uses a [WeMOS D1 Mini (R3)](https://docs.wemos.cc/en/latest/d1/
 * It uses the ADC Input for the sensor reading so a variant that has access to that pin is required.  If the module doesn't have a resistor voltage divider on the ADC input you will need to add it/adjust the resistors to the sensor.
 * The WeMOS has a built in 3.3v regulator for the ESP8266 and the sensor runs at 5V so suitable supply electronics are required.
 
+<p align="center"><img src="https://github.com/CraigHoffmann/water-meter-reader/blob/master/Circuit/watermeter-cct.jpg?raw=true" alt="Circuit" width="75%"><p>
+
+<p align="center"><img src="https://github.com/CraigHoffmann/water-meter-reader/blob/master/Circuit/watermeter-wiring.jpg?raw=true" alt="Wiring" width="75%"><p>
 
 ![Circuit](https://github.com/CraigHoffmann/water-meter-reader/blob/master/Circuit/watermeter-cct.jpg?raw=true)
 
