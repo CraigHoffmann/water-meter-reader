@@ -8,7 +8,7 @@ I have read that some water meters have a rotating magnet inside the meter that 
 
 ## Electronics
 
-The meter reader uses a WeMOS D1 Mini (R3) but would work with any ESP8266 with a few conditions.
+The meter reader uses a [WeMOS D1 Mini (R3)](https://docs.wemos.cc/en/latest/d1/d1_mini.html) but would work with any ESP8266 with a few conditions.
 
 * It uses the ADC Input for the sensor reading so a variant that has access to that pin is required.  If the module doesn't have a resistor voltage divider on the ADC input you will need to add it/adjust the resistors to the sensor.
 * The WeMOS has a built in 3.3v regulator for the ESP8266 and the sensor runs at 5V so suitable supply electronics are required.
