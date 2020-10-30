@@ -17,10 +17,6 @@ The meter reader uses a [WeMOS D1 Mini (R3)](https://docs.wemos.cc/en/latest/d1/
 
 <p align="center"><img src="https://github.com/CraigHoffmann/water-meter-reader/blob/master/Circuit/watermeter-wiring.jpg?raw=true" alt="Wiring" width="75%"><p>
 
-![Circuit](https://github.com/CraigHoffmann/water-meter-reader/blob/master/Circuit/watermeter-cct.jpg?raw=true)
-
-![Wiring](https://github.com/CraigHoffmann/water-meter-reader/blob/master/Circuit/watermeter-wiring.jpg?raw=true)
-
 
 ## Firmware
 
