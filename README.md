@@ -39,13 +39,18 @@ If you have a serial monitor plugged in when powering up the device it will disp
 * The main water meter setup page can be found at http://\<device-ip\>/  
 * Alternatively if your system supports multicast DNS then you can use http://watermeter.local/ 
 
+The default landing page is shows the cumulative count of kLiters used as well as the usage in the past 1 minute.  Both the MQTT setup and Sensor setup can be accessed from the home page. 
 
 | ![Homepage](https://github.com/CraigHoffmann/water-meter-reader/blob/master/Images/homepage.jpg?raw=true) |
 :-------------------------:
 
+Setup the MQTT connection.  
+
 | ![MQTT Setup](https://github.com/CraigHoffmann/water-meter-reader/blob/master/Images/mqttsetup.jpg?raw=true) | 
 :-------------------------:
-  
+
+It is necessary to setup the trigger thresholds for the sensor for the counter to work properly.  The best way to do this is to turn on a water tap full so you get a resonableflow rate then refresh the sensor setup page.  You should see the sensor signal rise and fall as the meter dial rotates as shown below.  Set the thresholds a bit below the maximum and a bit above the minimum as can be seen below.
+
 | ![Setup Trigger Thresholds](https://github.com/CraigHoffmann/water-meter-reader/blob/master/Images/setupchart.jpg?raw=true) |
 :-------------------------:
 
