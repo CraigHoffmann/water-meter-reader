@@ -27,11 +27,11 @@ I have the Wemos D1 in the garage and run a 3wire cable out to the meter with fo
 
 The Arduino IDE was used to develop and program the code.  If you have used this before with the ESP8266 devices you should have no problems.  If you're new to arduino or ESP8266's then there are hundreds of pages on the internet detailing how to setup the environment and program devices - I suggest you start by looking for one that suits your level of background knowledge to get up to speed.
 
-If you want the temperature sensor functionality then the **DallasTemperature** and **OneWire** libraries need to be installed in the IDE.
+
 
 ## Case
 
-My water meter cover had been broken off for years so I decided to make a new 3D printed cover that doubled as the case for the sensor.  I  The lid is "keyed" with the old lid hinge mounting so that the sensor is always aligned to the rotating dial. Files are available in the github repository to download and print your own.
+My water meter cover had been broken off for years so I decided to make a new 3D printed cover that doubled as the case for the sensor.  The lid is "keyed" with the old lid hinge mounting so that the sensor is always aligned to the rotating dial. Files are available in the github repository to download and print your own. The electronics are just hot glued to the inside plate. 
 
 If you don't have access to a 3D printer you could probably use the bottom of a plastic container or tin - anything that fits snug over the meter to keep the sensor aligned to the dial.  Use your imagination and maker skills.
 
@@ -58,4 +58,23 @@ It is necessary to setup the trigger thresholds for the sensor for the counter t
 
 | ![Setup Trigger Thresholds](https://github.com/CraigHoffmann/water-meter-reader/blob/master/Images/setupchart.jpg?raw=true) |
 :-------------------------:
+
+## Home Assistant
+
+Home assistant configuration is pretty straight forward, just add an MQTT sensor to the configuration.yaml file as follows: (this assumes you already have MQTT setup and working in home assistant)
+
+```YAML
+sensor:
+  # Wemos Water Meter kLiters Reading
+  - platform: mqtt
+    state_topic: "sensor/water-meter/kLiters"
+    name: "Meter Reading"
+    unit_of_measurement: "kLiters"
+
+  # Wemos Water Meter Flowrate Reading
+  - platform: mqtt
+    state_topic: "sensor/water-meter/FlowRate"
+    name: "Flowrate"
+    unit_of_measurement: "L/min"
+ ```
 
