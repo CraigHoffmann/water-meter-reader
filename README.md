@@ -54,14 +54,18 @@ Setup the MQTT connection.
 | ![MQTT Setup](https://github.com/CraigHoffmann/water-meter-reader/blob/master/Images/mqttsetup.jpg?raw=true) | 
 :-------------------------:
 
-It is necessary to setup the trigger thresholds for the sensor for the counter to work properly.  The best way to do this is to turn on a water tap full so you get a resonableflow rate then refresh the sensor setup page.  You should see the sensor signal rise and fall as the meter dial rotates as shown below.  Set the thresholds a bit below the maximum and a bit above the minimum as can be seen below.
+It is necessary to setup the **trigger thresholds** for the sensor for the counter to work properly.  The best way to do this is to turn on a water tap full so you get a resonableflow rate then refresh the sensor setup page.  You should see the sensor signal rise and fall as the meter dial rotates as shown below.  Set the thresholds a bit below the maximum and a bit above the minimum as can be seen below.
 
 | ![Setup Trigger Thresholds](https://github.com/CraigHoffmann/water-meter-reader/blob/master/Images/setupchart.jpg?raw=true) |
 :-------------------------:
 
-Set the kLiters reading to match the current water meter reading and click the update button.  All settings will be saved to non-volatile memory on the Wemos.
+Next set the **Counts per Liter**.  This is the number of times the needle rotates for 1 Liter of water use.  In my case the dial rotates once per liter so the value is set to 1.  
+
+Set the **Meter Reading (kL)** to match the current water meter reading and **click the update button**.  All settings will be saved to non-volatile memory on the Wemos.
 
 **Note:** the counter will not start "counting" until the kLiters reading is set to a value greater than zero.  The kLiteres is set as "reatined" in MQTT so this is how the value is maintained through reset or power fail. 
+
+
 
 ## Home Assistant
 
