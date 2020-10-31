@@ -13,6 +13,10 @@ The meter reader uses a [WeMOS D1 Mini (R3)](https://docs.wemos.cc/en/latest/d1/
 * It uses the ADC Input for the sensor reading so a variant that has access to that pin is required.  If the module doesn't have a resistor voltage divider on the ADC input you will need to add it/adjust the resistors to the sensor.
 * The WeMOS has a built in 3.3v regulator for the ESP8266 and the sensor runs at 5V so suitable supply electronics are required.
 
+An optical reflectance sensor (TCRT5000) is used to detect the IR reflected light and is monitored using the analog input.  As the dial turns the reflectance changes as the needle passes by.  Trigger levels are set on the analog signal to count the revolutions of the dial.  Its simple but works reliably for my meter.
+
+I have the Wemos D1 in the garage and run a 3wire cable out to the meter with for the sensor.  Alternatively all electrics could be placed at the meter and run power to the meter (or maybe use solar and batteries?)
+
 | <img src="https://github.com/CraigHoffmann/water-meter-reader/blob/master/Circuit/watermeter-cct.jpg?raw=true" alt="Circuit" width="75%"> |
 :-------------------------:
 
