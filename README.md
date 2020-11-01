@@ -49,10 +49,12 @@ The default landing page is shows the cumulative count of kLiters used as well a
 | ![Homepage](https://github.com/CraigHoffmann/water-meter-reader/blob/master/Images/homepage.jpg?raw=true) |
 :-------------------------:
 
-Setup the MQTT connection.  
+### Setup the MQTT connection.  
 
 | ![MQTT Setup](https://github.com/CraigHoffmann/water-meter-reader/blob/master/Images/mqttsetup.jpg?raw=true) | 
 :-------------------------:
+
+### Setup the sensor trigger thresholds
 
 It is necessary to setup the **trigger thresholds** for the sensor for the counter to work properly.  The best way to do this is to turn on a water tap full so you get a resonableflow rate then refresh the sensor setup page.  You should see the sensor signal rise and fall as the meter dial rotates as shown below.  Set the thresholds a bit below the maximum and a bit above the minimum as can be seen below.
 
