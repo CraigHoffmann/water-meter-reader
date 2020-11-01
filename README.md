@@ -6,6 +6,10 @@ I have read that some water meters have a rotating magnet inside the meter that 
 
 ![SA Water Meter](https://github.com/CraigHoffmann/water-meter-reader/blob/master/Images/watermeter2.jpg?raw=true) ![Meter Dial](https://github.com/CraigHoffmann/water-meter-reader/blob/master/Images/watermeter3.JPG?raw=true)
 
+This is what it looks like with the sensor fitted...
+
+![Installed](https://github.com/CraigHoffmann/water-meter-reader/blob/master/Images/installed.jpg?raw=true)
+
 ## Electronics
 
 The meter reader uses a [WeMOS D1 Mini (R3)](https://docs.wemos.cc/en/latest/d1/d1_mini.html) but would work with any ESP8266 with a few conditions.
@@ -32,6 +36,9 @@ Simply compile and upload the code using the Arduino IDE.
 ## Case
 
 My water meter cover had been broken off for years so I decided to make a new 3D printed cover that doubled as the case for the sensor.  The lid is "keyed" with the old lid hinge mounting so that the sensor is always aligned to the rotating dial. Files are available in the github repository to download and print your own. The electronics are just hot glued to the inside plate. 
+
+![lid](https://github.com/CraigHoffmann/water-meter-reader/blob/master/Images/lid.jpg?raw=true) ![lid](https://github.com/CraigHoffmann/water-meter-reader/blob/master/Images/insert.jpg?raw=true)
+
 
 If you don't have access to a 3D printer you could probably use the bottom of a plastic container or tin - anything that fits snug over the meter to keep the sensor aligned to the dial.  Use your imagination and maker skills.
 
