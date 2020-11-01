@@ -31,7 +31,7 @@ I have the Wemos D1 in the garage and run a 3wire cable out to the meter with fo
 
 The Arduino IDE was used to develop and program the code.  If you have used this before with the ESP8266 devices you should have no problems.  If you're new to arduino or ESP8266's then there are hundreds of pages on the internet detailing how to setup the environment and program devices - I suggest you start by looking for one that suits your level of background knowledge to get up to speed.
 
-Simply compile and upload the code using the Arduino IDE.
+Simply compile and upload the **WaterMeter.ino** code using the Arduino IDE.
 
 ## Case
 
